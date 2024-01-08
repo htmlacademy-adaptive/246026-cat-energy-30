@@ -1,7 +1,69 @@
-.example-image__bar {
-  width: 40px;
-  height: 40px;
+.example-image {
+  position: relative;
+  --h: 256 * 2;
+  --w: 560;
+  --value: 50%;
 
-  @include set-svg-sprite("thumb", 40px, 40px);
-  @include set-background-svg-options();
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: calc((var(--h) / var(--w)) * 100%);
+  }
+}
+
+.example-image__image {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.example-image__image--before {
+  clip-path: polygon(0% 0%, var(--value) 0%, var(--value) 100%, 0% 100%);
+}
+
+.example-image__image--after {
+  clip-path: polygon(100% 0%, var(--value) 0%, var(--value) 100%, 100% 100%);
+}
+
+.example-image__range {
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: inherit;
+  height: 100%;
+  margin: 0;
+  outline: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+
+.example-image__line {
+  position: absolute;
+  inset: 0;
+  width: 4px;
+  height: 100%;
+  background-color: $color-text-500;
+  left: var(--value);
+  transform: translateX(-50%);
+  pointer-events: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    @include set-svg-sprite("thumb", 40px, 40px);
+    @include set-background-svg-options();
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin: auto;
+  }
 }
