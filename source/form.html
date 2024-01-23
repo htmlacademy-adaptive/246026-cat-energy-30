@@ -10,39 +10,40 @@
 </head>
 
 <body class="page__body">
-<header class="page__header main-header container main-header--form">
-  <div class="main-header__container">
-    <div class="main-header__logo logo">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202"
-          height="59">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
-        <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
-      </picture>
+<header class="page__header main-header main-header--border">
+  <div class="main-header__container container">
+    <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__logo logo">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202"
+            height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174"
+            height="50">
+          <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
+        </picture>
+      </div>
 
-      <img class="logo__text" src="images/logo-header-text.svg" width="101" height="18" alt="Cat Energy">
-    </div>
+      <img class="main-nav__text" src="images/footer-logo.svg" width="101" height="18" alt="Cat Energy">
 
-    <button class="main-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню.</span>
-    </button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+
+      <ul class="main-nav__list main-nav__list--form">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="./index.html">Главная</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
+        </li>
+
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link" href="./form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-
-  <nav class="main-header__nav main-nav main-nav--form main-nav--nojs">
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="./index.html">Главная</a>
-      </li>
-
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
-      </li>
-
-      <li class="main-nav__item main-nav__item--active">
-        <a class="main-nav__link" href="./form.html">Подбор программы</a>
-      </li>
-    </ul>
-  </nav>
 </header>
 
 <main class="page__main main-content form-content container">
@@ -52,7 +53,7 @@
     <p class="form-content__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
   </div>
 
-  <form class="form-content__form form" action="https://echo.htmlacademy.ru">
+  <form class="form-content__form form" method="post" action="https://echo.htmlacademy.ru">
     <div class="form__container">
       <div class="form__wrapper">
         <div class="form__list form__list--border form__list--main">
@@ -84,7 +85,7 @@
           </div>
 
           <div class="form__group form-group">
-            <input class="form-group__field field" type="radio" name="goal" id="nevermind" value="nevermind" >
+            <input class="form-group__field field" type="radio" name="goal" id="nevermind" value="nevermind">
             <label class="form-group__label" for="nevermind">Не знаю (Нужен ваш совет)</label>
           </div>
         </div>
@@ -170,9 +171,9 @@
     </div>
 
     <footer class="form__footer form-footer">
-      <button class="form-footer__button button" type="button">Отправить заявку</button>
+      <button class="form-footer__button button" type="submit">Отправить заявку</button>
 
-      <span class="form-footer__text">* – Обязательные поля</span>
+      <span class="form-footer__text">* — Обязательные поля</span>
     </footer>
   </form>
 </main>
@@ -182,7 +183,7 @@
     <h2 class="main-footer__header visually-hidden">Карта</h2>
 
     <div class="location__container container">
-      <p class="location__invitation">Приглашаем<br> к сотрудничеству дилеров!</p>
+      <p class="location__invitation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
       <address class="location__address">
         <p>ул. Большая</p>
         <p>Конюшенная, д. 19/8</p>
@@ -196,7 +197,9 @@
 
   <div class="main-footer__buttons container">
     <div class="main-footer__logo logo">
-      <img class="logo__img logo__img--footer" src="images/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+      <a class="logo__link" href="index.html">
+        <img class="logo__img logo__img--footer" src="images/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+      </a>
     </div>
 
     <div class="main-footer__network socials">
@@ -204,7 +207,7 @@
         <li class="socials__item">
           <a class="socials__link socials__link--vk" href="#">
             <span class="visually-hidden">Вк</span>
-            <svg width="28" height="22" viewBox="0 0 28 22">
+            <svg width="28" height="22">
               <use href="./images/icons/stack.svg#vk"></use>
             </svg>
           </a>
@@ -213,7 +216,7 @@
         <li class="socials__item">
           <a class="socials__link socials__link--youtube" href="#">
             <span class="visually-hidden">Youtube</span>
-            <svg width="28" height="22" viewBox="0 0 28 22">
+            <svg width="28" height="22">
               <use href="./images/icons/stack.svg#youtube"></use>
             </svg>
           </a>
@@ -222,7 +225,7 @@
         <li class="socials__item">
           <a class="socials__link socials__link--tg" href="#">
             <span class="visually-hidden">Телеграм</span>
-            <svg width="28" height="22" viewBox="0 0 28 22">
+            <svg width="28" height="22">
               <use href="./images/icons/stack.svg#telegram"></use>
             </svg>
           </a>
@@ -231,10 +234,15 @@
     </div>
 
     <div class="main-footer__copyright copyright">
-      <span class="copyright__name">HTML Academy</span>
-      <svg width="27" height="34" viewBox="0 0 27 34">
-        <use href="./images/icons/stack.svg#html-academy"></use>
-      </svg>
+      <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__name">HTML Academy</span>
+      </a>
+      <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+        <svg width="27" height="34" viewBox="0 0 27 34">
+          <use href="./images/icons/stack.svg#html-academy"></use>
+        </svg>
+      </a>
     </div>
   </div>
 </footer>

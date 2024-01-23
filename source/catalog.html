@@ -9,40 +9,41 @@
   <link rel="preload" href="/source/fonts/oswald/Oswald.woff2" as="font">
 </head>
 
-<body class="page__body ">
-<header class="page__header main-header container">
-  <div class="main-header__container">
-    <div class="main-header__logo logo">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202"
-          height="59">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
-        <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
-      </picture>
+<body class="page__body">
+<header class="page__header main-header main-header--border">
+  <div class="main-header__container container">
+    <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__logo logo">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202"
+            height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174"
+            height="50">
+          <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
+        </picture>
+      </div>
 
-      <img class="logo__text" src="images/logo-header-text.svg" width="101" height="18" alt="Cat Energy">
-    </div>
+      <img class="main-nav__text" src="images/footer-logo.svg" width="101" height="18" alt="Cat Energy">
 
-    <button class="main-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню.</span>
-    </button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="./index.html">Главная</a>
+        </li>
+
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="./form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-
-  <nav class="main-header__nav main-nav main-nav--nojs">
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="./index.html">Главная</a>
-      </li>
-
-      <li class="main-nav__item main-nav__item--active">
-        <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
-      </li>
-
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="./form.html">Подбор программы</a>
-      </li>
-    </ul>
-  </nav>
 </header>
 
 <main class="page__main main-content container">
@@ -51,25 +52,25 @@
 
     <ul class="catalog__list">
       <li class="catalog__item product">
-        <div class="product__image-wrapper">
+        <a class="product__image-wrapper" href="./404.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/can-chicken-500@1x.webp 1x, images/can-chicken-500@2x.webp 2x" width="161"
-              height="172">
+              srcset="images/can-chicken-500-tablet@1x.webp 1x, images/can-chicken-500-tablet@2x.webp 2x" width="200"
+              height="210">
             <source type="image/webp"
-              srcset="images/can-chicken-500-mobile@1x.webp 1x, images/can-chicken-500-mobile@2x.webp 2x" width="68"
-              height="86">
+              srcset="images/can-chicken-500-mobile@1x.webp 1x, images/can-chicken-500-mobile@2x.webp 2x" width="140"
+              height="107">
             <source type="image/png" media="(min-width: 768px)"
-              srcset="images/can-chicken-500@1x.png 1x, images/can-chicken-500@2x.png 2x" width="161"
-              height="172">
+              srcset="images/can-chicken-500-tablet@1x.png 1x, images/can-chicken-500-tablet@2x.png 2x" width="200"
+              height="210">
             <img class="product__image" src="images/can-chicken-500-mobile@1x.png"
-              srcset="images/can-chicken-500-mobile@2x.png 2x" width="68" height="86"
+              srcset="images/can-chicken-500-mobile@2x.png 2x" width="140" height="107"
               alt="Cat Energy PRO с курицей 500 г">
           </picture>
-        </div>
+        </a>
 
         <div class="product__info">
-          <p class="product__name">Cat Energy PRO<br class="product__next-line"> 500 г</p>
+          <a class="product__name" href="./404.html">Cat Energy PRO<br class="product__next-line"> 500 г</a>
 
           <dl class="product__values catalog-values">
             <dt class="catalog-values__text">Масса</dt>
@@ -86,27 +87,29 @@
           </dl>
         </div>
 
-        <button class="product__button button" type="button">Заказать</button>
+        <a class="product__button button" href="./404.html">Заказать</a>
       </li>
 
       <li class="catalog__item product">
-        <div class="product__image-wrapper">
+        <a class="product__image-wrapper" href="./404.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/can-chicken-1000@1x.webp 1x, images/can-chicken-1000@2x.webp 2x" width="168"
-              height="206">
-            <source type="image/webp" srcset="images/can-chicken-1000-mobile@1x.webp, images/can-chicken-1000-mobile@2x.webp 2x" width="84" height="100">
+              srcset="images/can-chicken-1000-tablet@1x.webp 1x, images/can-chicken-1000-tablet@2x.webp 2x" width="200"
+              height="210">
+            <source type="image/webp"
+              srcset="images/can-chicken-1000-mobile@1x.webp, images/can-chicken-1000-mobile@2x.webp 2x" width="140"
+              height="107">
             <source type="image/png" media="(min-width: 768px)"
-              srcset="images/can-chicken-1000@1x.png 1x, images/can-chicken-1000@2x.png 2x" width="168"
-              height="206">
+              srcset="images/can-chicken-1000-tablet@1x.png 1x, images/can-chicken-1000-tablet@2x.png 2x" width="200"
+              height="210">
             <img class="product__image" src="images/can-chicken-1000-mobile@1x.png"
-              srcset="images/can-chicken-1000-mobile@2x.png 2x" width="84" height="100"
+              srcset="images/can-chicken-1000-mobile@2x.png 2x" width="140" height="107"
               alt="Cat Energy PRO с курицей 1000 г">
           </picture>
-        </div>
+        </a>
 
         <div class="product__info">
-          <p class="product__name">Cat Energy PRO<br class="product__next-line"> 1000 г</p>
+          <a class="product__name" href="./404.html">Cat Energy PRO<br class="product__next-line"> 1000 г</a>
 
           <dl class="product__values catalog-values">
             <dt class="catalog-values__text">Масса</dt>
@@ -123,25 +126,28 @@
           </dl>
         </div>
 
-        <button class="product__button button" type="button">Заказать</button>
+        <a class="product__button button" href="./404.html">Заказать</a>
       </li>
 
       <li class="catalog__item product">
-        <div class="product__image-wrapper">
+        <a class="product__image-wrapper" href="./404.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/can-fish-500@1x.webp 1x, images/can-fish-500@2x.webp 2x" width="163" height="174">
-            <source type="image/webp" srcset="images/can-fish-500-mobile@1x.webp, images/can-fish-500-mobile@2x.webp 2x" width="68" height="79">
+              srcset="images/can-fish-500-tablet@1x.webp 1x, images/can-fish-500-tablet@2x.webp 2x" width="200"
+              height="210">
+            <source type="image/webp" srcset="images/can-fish-500-mobile@1x.webp, images/can-fish-500-mobile@2x.webp 2x"
+              width="140" height="107">
             <source type="image/png" media="(min-width: 768px)"
-              srcset="images/can-fish-500@1x.png 1x, images/can-fish-500@2x.png 2x" width="163" height="174">
+              srcset="images/can-fish-500-tablet@1x.png 1x, images/can-fish-500-tablet@2x.png 2x" width="200"
+              height="210">
             <img class="product__image" src="images/can-fish-500-mobile@1x.png"
-              srcset="images/can-fish-500-mobile@2x.png 2x" width="68" height="79"
+              srcset="images/can-fish-500-mobile@2x.png 2x" width="140" height="107"
               alt="Cat Energy PRO с рыбой 500 г">
           </picture>
-        </div>
+        </a>
 
         <div class="product__info">
-          <p class="product__name">Cat Energy PRO<br class="product__next-line"> 500 г</p>
+          <a class="product__name" href="./404.html">Cat Energy PRO<br class="product__next-line"> 500 г</a>
 
           <dl class="product__values catalog-values">
             <dt class="catalog-values__text">Масса</dt>
@@ -158,27 +164,29 @@
           </dl>
         </div>
 
-        <button class="product__button button" type="button">Заказать</button>
+        <a class="product__button button" href="./404.html">Заказать</a>
       </li>
 
       <li class="catalog__item product">
-        <div class="product__image-wrapper">
+        <a class="product__image-wrapper" href="./404.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/can-fish-1000@1x.webp 1x, images/can-fish-1000@2x.webp 2x" width="168"
-              height="200">
-            <source type="image/webp" srcset="images/can-fish-1000-mobile@1x.webp,images/can-fish-1000-mobile@2x.webp 2x" width="84" height="100">
+              srcset="images/can-fish-1000-tablet@1x.webp 1x, images/can-fish-1000-tablet@2x.webp 2x" width="200"
+              height="210">
+            <source type="image/webp"
+              srcset="images/can-fish-1000-mobile@1x.webp, images/can-fish-1000-mobile@2x.webp 2x" width="140"
+              height="107">
             <source type="image/png" media="(min-width: 768px)"
-              srcset="images/can-fish-1000@1x.png 1x, images/can-fish-1000@2x.png 2x" width="168"
-              height="200">
+              srcset="images/can-fish-1000-tablet@1x.png 1x, images/can-fish-1000-tablet@2x.png 2x" width="200"
+              height="210">
             <img class="product__image" src="images/can-fish-1000-mobile@1x.png"
-              srcset="images/can-fish-1000-mobile@2x.png 2x" width="84" height="100"
+              srcset="images/can-fish-1000-mobile@2x.png 2x" width="140" height="107"
               alt="Cat Energy PRO с рыбой 1000 г">
           </picture>
-        </div>
+        </a>
 
         <div class="product__info">
-          <p class="product__name">Cat Energy PRO<br class="product__next-line"> 1000 г</p>
+          <a class="product__name" href="./404.html">Cat Energy PRO<br class="product__next-line"> 1000 г</a>
 
           <dl class="product__values catalog-values">
             <dt class="catalog-values__text">Масса</dt>
@@ -195,25 +203,28 @@
           </dl>
         </div>
 
-        <button class="product__button button" type="button">Заказать</button>
+        <a class="product__button button" href="./404.html">Заказать</a>
       </li>
 
       <li class="catalog__item product">
-        <div class="product__image-wrapper">
+        <a class="product__image-wrapper" href="./404.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/can-slim-500@1x.webp 1x, images/can-slim-500@2x.webp 2x" width="161" height="171">
-            <source type="image/webp" srcset="images/can-slim-500-mobile@1x.webp,images/can-slim-500-mobile@2x.webp 2x" width="68" height="78">
+              srcset="images/can-slim-500-tablet@1x.webp 1x, images/can-slim-500-tablet@2x.webp 2x" width="200"
+              height="210">
+            <source type="image/webp" srcset="images/can-slim-500-mobile@1x.webp, images/can-slim-500-mobile@2x.webp 2x"
+              width="140" height="107">
             <source type="image/png" media="(min-width: 768px)"
-              srcset="images/can-slim-500@1x.png 1x, images/can-slim-500@2x.png 2x" width="161" height="171">
+              srcset="images/can-slim-500-tablet@1x.png 1x, images/can-slim-500-tablet@2x.png 2x" width="200"
+              height="210">
             <img class="product__image" src="images/can-slim-500-mobile@1x.png"
-              srcset="images/can-slim-500-mobile@2x.png 2x" width="68" height="78"
+              srcset="images/can-slim-500-mobile@2x.png 2x" width="140" height="107"
               alt="Cat Energy SLIM с гречкой 500 г">
           </picture>
-        </div>
+        </a>
 
         <div class="product__info">
-          <p class="product__name">Cat Energy SLIM<br class="product__next-line"> 500 г</p>
+          <a class="product__name" href="./404.html">Cat Energy SLIM<br class="product__next-line"> 500 г</a>
 
           <dl class="product__values catalog-values">
             <dt class="catalog-values__text">Масса</dt>
@@ -230,27 +241,29 @@
           </dl>
         </div>
 
-        <button class="product__button button" type="button">Заказать</button>
+        <a class="product__button button" href="./404.html">Заказать</a>
       </li>
 
       <li class="catalog__item product">
-        <div class="product__image-wrapper">
+        <a class="product__image-wrapper" href="./404.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/can-slim-1000@1x.webp 1x, images/can-slim-1000@2x.webp 2x" width="168"
-              height="200">
-            <source type="image/webp" srcset="images/can-slim-1000-mobile@1x.webp,images/can-slim-1000-mobile@2x.webp 2x" width="84" height="100">
+              srcset="images/can-slim-1000-tablet@1x.webp 1x, images/can-slim-1000-tablet@2x.webp 2x" width="200"
+              height="210">
+            <source type="image/webp"
+              srcset="images/can-slim-1000-mobile@1x.webp, images/can-slim-1000-mobile@2x.webp 2x" width="140"
+              height="107">
             <source type="image/png" media="(min-width: 768px)"
-              srcset="images/can-slim-1000@1x.png 1x, images/can-slim-1000@2x.png 2x" width="168"
-              height="200">
+              srcset="images/can-slim-1000-tablet@1x.png 1x, images/can-slim-1000-tablet@2x.png 2x" width="200"
+              height="210">
             <img class="product__image" src="images/can-slim-1000-mobile@1x.png"
-              srcset="images/can-slim-1000-mobile@2x.png 2x" width="84" height="100"
+              srcset="images/can-slim-1000-mobile@2x.png 2x" width="140" height="107"
               alt="Cat Energy SLIM с гречкой 1000 г">
           </picture>
-        </div>
+        </a>
 
         <div class="product__info">
-          <p class="product__name">Cat Energy SLIM<br class="product__next-line"> 1000 г</p>
+          <a class="product__name" href="./404.html">Cat Energy SLIM<br class="product__next-line"> 1000 г</a>
 
           <dl class="product__values catalog-values">
             <dt class="catalog-values__text">Масса</dt>
@@ -267,25 +280,28 @@
           </dl>
         </div>
 
-        <button class="product__button button" type="button">Заказать</button>
+        <a class="product__button button" href="./404.html">Заказать</a>
       </li>
 
       <li class="catalog__item product">
-        <div class="product__image-wrapper">
+        <a class="product__image-wrapper" href="./404.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/can-rice-500@1x.webp 1x, images/can-rice-500@2x.webp 2x" width="163" height="174">
-            <source type="image/webp" srcset="images/can-rice-500-mobile@1x.webp,images/can-rice-500-mobile@2x.webp 2x" width="72" height="84">
+              srcset="images/can-rice-500-tablet@1x.webp 1x, images/can-rice-500-tablet@2x.webp 2x" width="200"
+              height="210">
+            <source type="image/webp" srcset="images/can-rice-500-mobile@1x.webp, images/can-rice-500-mobile@2x.webp 2x"
+              width="140" height="107">
             <source type="image/png" media="(min-width: 768px)"
-              srcset="images/can-rice-500@1x.png 1x, images/can-rice-500@2x.png 2x" width="163" height="174">
+              srcset="images/can-rice-500-tablet@1x.png 1x, images/can-rice-500-tablet@2x.png 2x" width="200"
+              height="210">
             <img class="product__image" src="images/can-rice-500-mobile@1x.png"
-              srcset="images/can-rice-500-mobile@2x.png 2x" width="72" height="84"
+              srcset="images/can-rice-500-mobile@2x.png 2x" width="140" height="107"
               alt="Cat Energy SLIM с рисом 500 г">
           </picture>
-        </div>
+        </a>
 
         <div class="product__info">
-          <p class="product__name">Cat Energy SLIM<br class="product__next-line"> 500 г</p>
+          <a class="product__name" href="./404.html">Cat Energy SLIM<br class="product__next-line"> 500 г</a>
 
           <dl class="product__values catalog-values">
             <dt class="catalog-values__text">Масса</dt>
@@ -302,7 +318,7 @@
           </dl>
         </div>
 
-        <button class="product__button button" type="button">Заказать</button>
+        <a class="product__button button" href="./404.html">Заказать</a>
       </li>
 
       <li class="catalog__item product product--default">
@@ -318,7 +334,7 @@
           <p class="product__more">На самом деле вкусов гораздо больше!</p>
         </div>
 
-        <button class="product__button button button--default" type="button">Показать все</button>
+        <a class="product__button button button--default" href="./404.html">Показать все</a>
       </li>
     </ul>
   </section>
@@ -337,7 +353,7 @@
 
           <p class="advanced__text advanced__text--price">200 ₽</p>
 
-          <button class="advanced__button button" type="button">Заказать</button>
+          <a class="advanced__button button" href="./404.html">Заказать</a>
         </li>
 
         <li class="advanced__item">
@@ -347,7 +363,7 @@
 
           <p class="advanced__text advanced__text--price">50 ₽</p>
 
-          <button class="advanced__button button" type="button">Заказать</button>
+          <a class="advanced__button button" href="./404.html">Заказать</a>
         </li>
 
         <li class="advanced__item">
@@ -357,7 +373,7 @@
 
           <p class="advanced__text advanced__text--price">100 ₽</p>
 
-          <button class="advanced__button button" type="button">Заказать</button>
+          <a class="advanced__button button" href="./404.html">Заказать</a>
         </li>
 
         <li class="advanced__item">
@@ -367,7 +383,7 @@
 
           <p class="advanced__text advanced__text--price">300 ₽</p>
 
-          <button class="advanced__button button" type="button">Заказать</button>
+          <a class="advanced__button button" href="./404.html">Заказать</a>
         </li>
       </ul>
 
@@ -387,7 +403,7 @@
     <h2 class="main-footer__header visually-hidden">Карта</h2>
 
     <div class="location__container container">
-      <p class="location__invitation">Приглашаем<br> к сотрудничеству дилеров!</p>
+      <p class="location__invitation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
       <address class="location__address">
         <p>ул. Большая</p>
         <p>Конюшенная, д. 19/8</p>
@@ -401,7 +417,9 @@
 
   <div class="main-footer__buttons container">
     <div class="main-footer__logo logo">
-      <img class="logo__img logo__img--footer" src="images/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+      <a class="logo__link" href="index.html">
+        <img class="logo__img logo__img--footer" src="images/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+      </a>
     </div>
 
     <div class="main-footer__network socials">
@@ -409,7 +427,7 @@
         <li class="socials__item">
           <a class="socials__link socials__link--vk" href="#">
             <span class="visually-hidden">Вк</span>
-            <svg width="28" height="22" viewBox="0 0 28 22">
+            <svg width="28" height="22">
               <use href="./images/icons/stack.svg#vk"></use>
             </svg>
           </a>
@@ -418,7 +436,7 @@
         <li class="socials__item">
           <a class="socials__link socials__link--youtube" href="#">
             <span class="visually-hidden">Youtube</span>
-            <svg width="28" height="22" viewBox="0 0 28 22">
+            <svg width="28" height="22">
               <use href="./images/icons/stack.svg#youtube"></use>
             </svg>
           </a>
@@ -427,7 +445,7 @@
         <li class="socials__item">
           <a class="socials__link socials__link--tg" href="#">
             <span class="visually-hidden">Телеграм</span>
-            <svg width="28" height="22" viewBox="0 0 28 22">
+            <svg width="28" height="22">
               <use href="./images/icons/stack.svg#telegram"></use>
             </svg>
           </a>
@@ -436,10 +454,15 @@
     </div>
 
     <div class="main-footer__copyright copyright">
-      <span class="copyright__name">HTML Academy</span>
-      <svg width="27" height="34" viewBox="0 0 27 34">
-        <use href="./images/icons/stack.svg#html-academy"></use>
-      </svg>
+      <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__name">HTML Academy</span>
+      </a>
+      <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+        <svg width="27" height="34" viewBox="0 0 27 34">
+          <use href="./images/icons/stack.svg#html-academy"></use>
+        </svg>
+      </a>
     </div>
   </div>
 </footer>

@@ -6,7 +6,7 @@
   @media (min-width: $width-table) {
     padding-top: 41px;
     border-top: 1px solid $color-border-400;
-    background: linear-gradient($color-white 615px, $color-block-back 0%);
+    background: linear-gradient(0deg, $color-block-back 462px, transparent 0);
     padding-bottom: 101px;
 
     div.example {
@@ -15,10 +15,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-bottom: 26px;
-
+    padding-bottom: 76px;
     border-top: 0;
-    background: linear-gradient($color-white 140px, $color-block-back 0%);
+    background: linear-gradient($color-white 147px, $color-block-back 0%);
     padding-top: 7px;
   }
 }
@@ -26,12 +25,11 @@
 .example__container {
   display: grid;
   grid-template-rows: repeat(3, auto);
-  padding-top: 43px;
   gap: 20px;
 
   @media (min-width: $width-table) {
-    padding-top: 61px;
-    gap: 52px;
+    padding-top: 4px;
+    gap: 45px;
   }
 
   @media (min-width: $width-desktop) {
@@ -43,46 +41,44 @@
 .example__text {
   @include set-typography(14px, 18px, $color-text-400, $font-secondary);
   width: 100%;
+  margin: 0;
+  padding: 23px 0 0;
 
   @media (min-width: $width-table) {
     @include set-typography(16px, 24px, $color-black, $font-secondary);
+    padding: 15px 0 8px;
   }
 
   @media (min-width: $width-desktop) {
     @include set-typography(16px, 24px, $color-black, $font-secondary);
-    padding-top: 85px;
-    padding-bottom: 15px;
-    width: 433px;
+    padding-top: 101px;
+    padding-bottom: 21px;
+    max-width: 433px;
     text-wrap: pretty;
   }
 }
 
 .example__title {
   @include set-typography(12px, 12px, $color-text-400, $font-secondary);
+  padding-left: 21px;
+  padding-right: 23px;
+  margin: 0 auto;
 
   @media (min-width: $width-table) {
     @include set-typography(14px, 14px, $color-text-400, $font-secondary);
-  }
-}
-
-.example__item--weight .example__title {
-  padding-left: 21px;
-  padding-right: 22px;
-
-  @media (min-width: $width-table) {
     padding-left: 32px;
     padding-right: 34px;
   }
 }
 
 .example__item--days .example__title {
-  padding-left: 32px;
-  padding-right: 33px;
-
   @media (min-width: $width-table) {
-    padding-left: 7px;
+    padding-left: 5px;
     padding-right: 5px;
-    margin: 0 auto;
+    background: $color-white;
+  }
+
+  @media (min-width: $width-desktop) {
     background: $color-block-back;
   }
 }
@@ -134,7 +130,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: auto auto;
     justify-content: space-between;
-    padding-bottom: 48px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $width-desktop) {
@@ -170,7 +166,6 @@
   grid-template-columns: 2fr 1fr;
   width: 188px;
   margin: 0 auto;
-  background: $color-white;
 
   @media (min-width: $width-table) {
     grid-template-columns: 1fr;
@@ -178,6 +173,7 @@
     margin: auto;
     text-align: right;
     gap: 10px;
+    background: $color-white;
   }
 
   @media (min-width: $width-desktop) {

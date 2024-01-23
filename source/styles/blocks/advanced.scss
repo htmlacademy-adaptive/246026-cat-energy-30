@@ -1,5 +1,5 @@
 .main-content__sub-header h2.advanced__header {
-  @media (min-width: $width-table)  and (max-width: $width-desktop) {
+  @media (min-width: $width-table) and (max-width: $width-desktop) {
     margin-left: 0;
     padding-left: 40px;
   }
@@ -17,20 +17,22 @@
     grid-template-rows: auto 200px;
     padding-top: 80px;
     gap: 68px;
-    padding-bottom: 77px;
+    padding-bottom: 76px;
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: auto 247px;
+    grid-template-columns: auto 245px;
     grid-template-rows: auto;
-    padding-top: 78px;
-    padding-bottom: 86px;
+    padding-top: 79px;
+    padding-bottom: 87px;
     gap: 80px;
   }
 }
 
 .advanced__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 
   @include set-flexbox(column);
 }
@@ -41,8 +43,8 @@
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, 50%);
   border-bottom: 1px solid $color-border;
-  padding-top: 12.5px;
-  padding-bottom: 18px;
+  padding-top: 12px;
+  padding-bottom: 19px;
 
   &:nth-child(1) {
     border-top: 1px solid $color-border;
@@ -53,8 +55,9 @@
     padding: 25px 38px 27.5px;
     grid-template-rows: auto 40px;
     column-gap: 0;
-    row-gap: 15px;
+    row-gap: 16px;
     border: 1px solid $color-border;
+    border-bottom: 0;
     align-items: center;
   }
 
@@ -64,6 +67,10 @@
     grid-template-rows: 40px;
     column-gap: 40px;
     align-items: baseline;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid $color-border;
   }
 }
 
@@ -72,6 +79,8 @@
   @include set-typography-additional();
   grid-column: 1/3;
   grid-row: 1/ 2;
+  margin: 0;
+  padding: 0;
   padding-bottom: 14px;
 
   @media (min-width: $width-table) {
@@ -84,6 +93,8 @@
 
 .advanced__text {
   @include set-typography(14px, 14px, $color-text-400, $font-secondary);
+  margin: 0;
+  padding: 0;
   padding-bottom: 14px;
 
   @media (min-width: $width-table) {
